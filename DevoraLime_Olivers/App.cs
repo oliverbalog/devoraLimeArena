@@ -17,6 +17,8 @@ public class App
     {
         var heroes = await _arenaService.GetHeroes(5);
         _arenaService.StartBattle(heroes);
+
+        Console.ReadLine();
     }
 }
 

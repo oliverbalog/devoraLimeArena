@@ -7,6 +7,7 @@ using DevoraLime_Olivers.Domain.Modules.Arena;
 using DevoraLime_Olivers.Infrastructure;
 using DevoraLime_Olivers.Domain.Modules.Arena.Commands;
 using DevoraLime_Olivers.Infrastructure.ArenaService;
+using DevoraLime_Olivers.Test.HeroGeneration;
 
 namespace DevoraLime_Olivers.DependecyInjection
 {
@@ -20,6 +21,7 @@ namespace DevoraLime_Olivers.DependecyInjection
                 services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()))
                 .AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(StartArena.Handler).Assembly))
             .AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ArenaService).Assembly))
+            .AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GenerateHeroTest).Assembly))
             .AddSingleton<IArenaService, ArenaService>()
             .AddSingleton<App>();
             });

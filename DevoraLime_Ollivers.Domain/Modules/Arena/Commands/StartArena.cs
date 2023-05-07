@@ -25,7 +25,7 @@ namespace DevoraLime_Olivers.Domain.Modules.Arena.Commands
             {
                 _arenaService.StartBattle(request.Heroes);
 
-                return Unit.Task;
+                return Task.CompletedTask;
             }
         }
     }

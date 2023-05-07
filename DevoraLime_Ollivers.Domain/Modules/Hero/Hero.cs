@@ -34,6 +34,11 @@ namespace Domain.Modules.Hero
             MaxHealth = health;
         }
 
+
+        /// <summary>
+        /// The event that should occur when an attacker attacks.
+        /// </summary>
+        /// <param name="attacker">May it's IsDead param be changed.</param>
         public void GetAttacked(Hero attacker)
         {
             Random random = new Random();
@@ -93,11 +98,14 @@ namespace Domain.Modules.Hero
 
         public void Participated()
         {
-            Health = Health / 2;
-            if (Health < Health / 4)
+            if (IsDead) { return; }
+
+            Health /= 2;
+            if (Health < MaxHealth / 4)
             {
                 IsDead = true;
             }
+
         }
     }
 }

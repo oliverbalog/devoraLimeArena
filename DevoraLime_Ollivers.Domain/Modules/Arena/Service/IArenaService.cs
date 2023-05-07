@@ -5,6 +5,10 @@ namespace DevoraLime_Olivers.Domain.Modules.Arena
 {
 	public interface IArenaService
 	{
+		/// <summary>
+		/// Starts the battling session between heroes
+		/// </summary>
+		/// <param name="heroes">The heroes to for the fight</param>
 		void StartBattle(List<Hero> heroes);
 		/// <summary>
 		/// Generates the given N number of heroes as result.
