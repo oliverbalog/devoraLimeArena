@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1704.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevoraLime_Olivers", "DevoraLime_Olivers\DevoraLime_Olivers.csproj", "{6050343D-FC76-4EF5-B2FE-F95B27E739FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevoraLime_Ollivers.Domain", "DevoraLime_Ollivers.Domain\DevoraLime_Ollivers.Domain.csproj", "{F6CCF9F0-762A-48DA-8773-3E976BD5011D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevoraLime_Olivers.Infrastructure", "DevoraLime_Olivers.Infrastructure\DevoraLime_Olivers.Infrastructure.csproj", "{F8E64842-B1B6-49F2-95C2-0DAA73FF90EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6050343D-FC76-4EF5-B2FE-F95B27E739FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6050343D-FC76-4EF5-B2FE-F95B27E739FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6050343D-FC76-4EF5-B2FE-F95B27E739FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6CCF9F0-762A-48DA-8773-3E976BD5011D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6CCF9F0-762A-48DA-8773-3E976BD5011D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6CCF9F0-762A-48DA-8773-3E976BD5011D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6CCF9F0-762A-48DA-8773-3E976BD5011D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E64842-B1B6-49F2-95C2-0DAA73FF90EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E64842-B1B6-49F2-95C2-0DAA73FF90EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E64842-B1B6-49F2-95C2-0DAA73FF90EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E64842-B1B6-49F2-95C2-0DAA73FF90EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
